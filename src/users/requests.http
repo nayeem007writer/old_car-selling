@@ -3,19 +3,19 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email":"nayeem.1212@gmail.com",
-    "password":"nayeem"
+    "email":"nayee.12@gmail.com",
+    "password":"nayeem5"
 }
 
 ###find an user
-GET http://localhost:3000/auth/2
+GET http://localhost:3000/auth/1
 Content-Type: application/json
 
 ### Find all users
-GET http://localhost:3000/auth?lonewolf@gmail.com
+GET http://localhost:3000/auth?nayeem.12@gmail.com
 
 ###delete an user
-DELETE  http://localhost:3000/auth/1
+DELETE  http://localhost:3000/auth/
 Content-Type: application/json
 
 ### update user

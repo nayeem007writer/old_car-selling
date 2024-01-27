@@ -17,8 +17,11 @@ export class UsersService {
         console.log(id);
         return this.repo.findOne({ where: { id } });
     }
-    async findALL(email: string) {
-        return  await this.repo.find({where:{email}});
+    async abc(email: any) {
+        console.log(email);
+        const user = await this.repo.findOne({where:{email}});
+        console.log(user);
+        return user;
     }
     async update(id: number, attrs: Partial<User>) {
         const user = await this.repo.findOne({where: {id}});
